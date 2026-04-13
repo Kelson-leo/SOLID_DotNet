@@ -1,0 +1,14 @@
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/bin/Debug/net10.0/SRP_principle
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/bin/Debug/net10.0/SRP_principle.deps.json
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/bin/Debug/net10.0/SRP_principle.runtimeconfig.json
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/bin/Debug/net10.0/SRP_principle.dll
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/bin/Debug/net10.0/SRP_principle.pdb
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/obj/Debug/net10.0/SRP_principle.GeneratedMSBuildEditorConfig.editorconfig
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/obj/Debug/net10.0/SRP_principle.AssemblyInfoInputs.cache
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/obj/Debug/net10.0/SRP_principle.AssemblyInfo.cs
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/obj/Debug/net10.0/SRP_principle.csproj.CoreCompileInputs.cache
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/obj/Debug/net10.0/SRP_principle.dll
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/obj/Debug/net10.0/refint/SRP_principle.dll
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/obj/Debug/net10.0/SRP_principle.pdb
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/obj/Debug/net10.0/SRP_principle.genruntimeconfig.cache
+/home/userdebian/Documentos/Dotnet/SOLID_principles/SRP_principle/obj/Debug/net10.0/ref/SRP_principle.dll

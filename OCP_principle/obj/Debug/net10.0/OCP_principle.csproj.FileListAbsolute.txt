@@ -1,0 +1,15 @@
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/bin/Debug/net10.0/OCP_principle
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/bin/Debug/net10.0/OCP_principle.deps.json
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/bin/Debug/net10.0/OCP_principle.runtimeconfig.json
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/bin/Debug/net10.0/OCP_principle.dll
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/bin/Debug/net10.0/OCP_principle.pdb
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/obj/Debug/net10.0/OCP_principle.GeneratedMSBuildEditorConfig.editorconfig
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/obj/Debug/net10.0/OCP_principle.AssemblyInfoInputs.cache
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/obj/Debug/net10.0/OCP_principle.AssemblyInfo.cs
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/obj/Debug/net10.0/OCP_principle.csproj.CoreCompileInputs.cache
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/obj/Debug/net10.0/OCP_principle.sourcelink.json
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/obj/Debug/net10.0/OCP_principle.dll
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/obj/Debug/net10.0/refint/OCP_principle.dll
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/obj/Debug/net10.0/OCP_principle.pdb
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/obj/Debug/net10.0/OCP_principle.genruntimeconfig.cache
+/home/userdebian/Documentos/Dotnet/SOLID_principles/OCP_principle/obj/Debug/net10.0/ref/OCP_principle.dll

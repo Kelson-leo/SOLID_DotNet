@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("SRP_principle")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("OCP_principle")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d77e713258525e705022e84c26bf2faff102b98")]
-[assembly: System.Reflection.AssemblyProductAttribute("SRP_principle")]
-[assembly: System.Reflection.AssemblyTitleAttribute("SRP_principle")]
+[assembly: System.Reflection.AssemblyProductAttribute("OCP_principle")]
+[assembly: System.Reflection.AssemblyTitleAttribute("OCP_principle")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

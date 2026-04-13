@@ -1,32 +1,40 @@
 ﻿using System;
 
-namespace OCP_Violation
+namespace OCP_Compliant
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Pedido pedido1 = new Pedido();
+            Pedido clienteAssociado = new DescontoClienteAssociado();
+            Pedido clienteEspecial = new DescontoClienteEspecial();
+            Pedido clienteVIP = new DescontoClienteVIP();
+            Pedido clienteComum = new Pedido();
 
-            var valorPedidoClienteComun =
-               pedido1.DescontoPedido(1000, TipoCliente.Comum);
+            double clienteComumValorPedido =
+                clienteComum.DescontoPedido(1000);
 
-            var valorPedidoClienteAssociado =
-                pedido1.DescontoPedido(1000, TipoCliente.Associado);
+            double clienteAssociadoValorPedido =
+                clienteAssociado.DescontoPedido(1000);
 
-            var valorPedidoClienteEspecial =
-                pedido1.DescontoPedido(1000, TipoCliente.Especial);
+            double clienteEspecialValorPedido =
+                clienteEspecial.DescontoPedido(1000);
 
-            Console.WriteLine("Principio OCP - Violação");
+            double clienteVIPValorPedido =
+                clienteVIP.DescontoPedido(1000);
 
-            Console.WriteLine($"Cliente Comum = " +
-                $"{valorPedidoClienteComun}");
 
-            Console.WriteLine($"Cliente Associado = " +
-                $"{valorPedidoClienteAssociado}");
+            Console.WriteLine($"Cliente Comum =" +
+                $" {clienteComumValorPedido}");
 
-            Console.WriteLine($"Cliente Especial = " +
-                $" {valorPedidoClienteEspecial}");
+            Console.WriteLine($"Cliente Associado =" +
+                $" {clienteAssociadoValorPedido}");
+
+            Console.WriteLine($"Cliente Especial =" +
+                $" {clienteEspecialValorPedido}");
+
+            Console.WriteLine($"Cliente VIP =" +
+               $" {clienteVIPValorPedido}");
 
             Console.ReadLine();
         }

@@ -1,36 +1,44 @@
 using System;
-using System.IO;
 
-namespace SRP_Violation
+namespace SolidPrinciples.SRP_Compliant
 {
-    class Pedido
+    public class Pedido
     {
         public long Quantidade { get; set; }
         public DateTime Data { get; set; }
+        public string? ClienteEmail { get; set; }
+
+        private readonly ILogger _logger;
+        private readonly EmailService _emailService;
+
+        public Pedido(ILogger logger, EmailService emailService)
+        {
+            _logger = logger;
+            _emailService = emailService;
+        }
 
         public void IncluirPedido()
         {
             try
             {
-                // Simular inclusão do pedido
+                // Regras de negócio do pedido
                 this.Quantidade = 10;
                 this.Data = DateTime.Now;
+                this.ClienteEmail = "cliente@email.com";
 
-                Console.WriteLine("=== INCLUINDO PEDIDO ===");
-                Console.WriteLine($"Pedido criado em: {this.Data}");
-                Console.WriteLine($"Quantidade: {this.Quantidade}");
-                Console.WriteLine("Status: Pedido salvo no banco de dados");
+                _logger.Info("=== INCLUINDO PEDIDO ===");
+                _logger.Info($"Pedido criado em: {this.Data}");
+                _logger.Info($"Quantidade: {this.Quantidade}");
+                _logger.Info("Status: Pedido salvo no banco de dados");
 
-                // Simular envio de email (sem MailMessage real)
-                this.EnviaEmailPedido();
+                // Enviar email (delega responsabilidade)
+                _emailService.EnviarEmailPedido(this.ClienteEmail);
 
-                Console.WriteLine("\n✅ Pedido incluído com sucesso!");
+                _logger.Info("\n✅ Pedido incluído com sucesso!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ ERRO: {ex.Message}");
-                File.WriteAllText("ErrorLog.txt", ex.ToString());
-                Console.WriteLine("Erro registrado em ErrorLog.txt");
+                _logger.Error(ex.Message);
             }
         }
 
@@ -38,32 +46,13 @@ namespace SRP_Violation
         {
             try
             {
-                Console.WriteLine("\n=== DELETANDO PEDIDO ===");
-                Console.WriteLine($"Pedido de {this.Data} foi deletado");
-                Console.WriteLine("✅ Pedido deletado com sucesso!");
+                _logger.Info("\n=== DELETANDO PEDIDO ===");
+                _logger.Info($"Pedido de {this.Data} foi deletado");
+                _logger.Info("✅ Pedido deletado com sucesso!");
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"❌ ERRO: {ex.Message}");
-                File.WriteAllText("ErrorLog.txt", ex.ToString());
-            }
-        }
-
-        public void EnviaEmailPedido()
-        {
-            try
-            {
-                Console.WriteLine("\n=== ENVIANDO EMAIL ===");
-                Console.WriteLine("De: sistema@loja.com");
-                Console.WriteLine("Para: cliente@email.com");
-                Console.WriteLine("Assunto: Seu pedido foi confirmado");
-                Console.WriteLine("Corpo: Obrigado pela compra!");
-                Console.WriteLine("📧 Email enviado com sucesso (simulado)");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"❌ ERRO ao enviar email: {ex.Message}");
-                throw;
+                _logger.Error(ex.Message);
             }
         }
     }
